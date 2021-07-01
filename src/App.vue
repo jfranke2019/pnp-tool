@@ -1,19 +1,48 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>DnD 5e - Merchant Simulation</h1>
+
+    <Item
+      v-bind:title="item.data.name"
+      v-bind:priceQuantity="item.data.cost.quantity"
+      v-bind:priceUnit="item.data.cost.unit"
+      v-bind:url="item.data.url"
+    />
+
+    <MagicItem
+      
+    />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import axios from "axios";
+import Item from "./components/Item.vue";
+import MagicItem from "./components/MagicItem.vue"
+
+const API = "https://www.dnd5eapi.co/api/";
 
 export default {
-  name: 'App',
+  name: "App",
+  data() {
+    return {
+      item: null,
+      magic: null
+    };
+  },
   components: {
-    HelloWorld
-  }
-}
+    Item,
+    MagicItem
+  },
+  mounted() {
+    axios
+      .get(API + "/equipment/club")
+      .then((response) => (this.item = response));
+    axios
+      .get(API + "/magic-items/adamantine-armor")
+      .then((response) => (this.magic = response))
+  },
+};
 </script>
 
 <style>
@@ -22,7 +51,10 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #ffffff;
   margin-top: 60px;
+}
+body {
+  background-color: #2c3e50;
 }
 </style>
