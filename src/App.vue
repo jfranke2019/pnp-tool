@@ -1,24 +1,29 @@
 <template>
   <div id="app">
-    <h1>DnD 5e - Merchant Simulation</h1>
+    <b-navbar type="dark" variant="dark" sticky>
+    <b-navbar-brand href="#">DnD 5e Helper</b-navbar-brand>
 
-    <Item
-      v-bind:title="item.data.name"
-      v-bind:priceQuantity="item.data.cost.quantity"
-      v-bind:priceUnit="item.data.cost.unit"
-      v-bind:url="item.data.url"
-    />
+    <b-collapse id="nav-collapse" is-nav>
+      <b-navbar-nav>
+        <b-nav-item href="#">Link</b-nav-item>
+        <b-nav-item href="#">Link 2</b-nav-item>
+      </b-navbar-nav>
+    </b-collapse>
+  </b-navbar>
 
-    <MagicItem
-      
-    />
+  <template>
+    <div class="container">
+      <button type="button" class="btn btn-primary" v-on:click="getRandomItem()">Get Items</button>
+      <b-table striped hover items:="items" :fields="fields"></b-table>
+    </div>
+  </template>
+    
   </div>
 </template>
 
 <script>
 import axios from "axios";
-import Item from "./components/Item.vue";
-import MagicItem from "./components/MagicItem.vue"
+import { useQuery } from '@vue/apollo-composable'
 
 const API = "https://www.dnd5eapi.co/api/";
 
@@ -26,21 +31,51 @@ export default {
   name: "App",
   data() {
     return {
-      item: null,
-      magic: null
+      fields: ["name", "type", "rarity", "price"],
+      items: [{}],
+      allMundaneItemsCount: null,
+      allMundaneItems: null,
     };
   },
-  components: {
-    Item,
-    MagicItem
+  methods: {
+    getAllItems: function () {
+      axios.get(API + "/equipment/").then(function (response) {
+        this.allMundaneItemsCount = response.data.count;
+        this.allMundaneItems = response.data.results;
+        console.log("all items", this.allMundaneItems);
+        console.log("all items count", this.allMundaneItemsCount);
+      });
+    },
+    getRandomItem: function () {
+      var item;
+      var randomIndex;
+
+      randomIndex = Math.floor(Math.random() * this.allMundaneItemsCount);
+      item = this.allMundaneItems[randomIndex];
+      console.log("random item", item);
+      return item;
+    },
+    getItemProperties: function () {},
+    getRandomMagicItem: function (apiResponse) {
+      alert(apiResponse);
+    },
+    capitalizeLetters: function (string) {
+      alert(string);
+    },
+    createURL: function (apiUrl) {
+      const BASE = "https://www.dndbeyond.com";
+      var url = apiUrl.slice(4);
+      return BASE + url;
+    },
   },
   mounted() {
-    axios
-      .get(API + "/equipment/club")
-      .then((response) => (this.item = response));
-    axios
-      .get(API + "/magic-items/adamantine-armor")
-      .then((response) => (this.magic = response))
+    //this.getAllItems();
+    axios.get(API + "/equipment/").then(function (response) {
+        this.allMundaneItemsCount = response.data.count;
+        this.allMundaneItems = response.data.results;
+        console.log("all items", this.allMundaneItems);
+        console.log("all items count", this.allMundaneItemsCount);
+      });
   },
 };
 </script>
@@ -52,7 +87,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #ffffff;
-  margin-top: 60px;
 }
 body {
   background-color: #2c3e50;

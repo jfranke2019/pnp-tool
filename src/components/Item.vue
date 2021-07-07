@@ -1,8 +1,7 @@
 <template>
   <div>
-    <h1 id="title">{{ title }}</h1>
-    <h2 id="price"> {{ priceQuantity }} {{ priceUnit }} </h2>
-    <h2 id="url"> {{ url }}</h2>
+    <a id="title" :href="url"> {{ title }} </a>
+    <h2 id="price">{{ priceQuantity }} {{ priceUnit }}</h2>
   </div>
 </template>
 
