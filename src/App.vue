@@ -1,17 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <h1>Test</h1>
+    <p>
+      {{hello}}
+    </p>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import gql from "graphql-tag";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "app",
+  data: function () {
+    return {
+      hello: '',
+    }
+  },
+  apollo: {
+    hello: gql`
+      query {
+        hello
+      }
+    `,
+  },
+};
 </script>
 
 <style>
