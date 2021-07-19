@@ -1,35 +1,18 @@
-import { ApolloClient } from 'apollo-client'
-import { createHttpLink } from 'apollo-link-http'
-import { InMemoryCache } from 'apollo-cache-inmemory'
-import App from './App'
-
-// HTTP connection to the API
-const httpLink = createHttpLink({
-    // You should use an absolute URL here
-    uri: 'https://www.dnd5eapi.co/graphql',
-})
-
-// Cache implementation
-const cache = new InMemoryCache()
-
-// Create the apollo client
-const apolloClient = new ApolloClient({
-    link: httpLink,
-    cache,
-})
-
 import Vue from 'vue'
-import VueApollo from 'vue-apollo'
+import App from './App.vue'
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import { DropdownPlugin, TablePlugin } from 'bootstrap-vue'
 
-Vue.use(VueApollo)
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 
-const apolloProvider = new VueApollo({
-    defaultClient: apolloClient,
-})
+Vue.config.productionTip = false
+
+Vue.use(BootstrapVue)
+Vue.use(IconsPlugin)
+Vue.use(DropdownPlugin)
+Vue.use(TablePlugin)
 
 new Vue({
-    el: '#app',
-    // inject apolloProvider here like vue-router or vuex
-    apolloProvider,
-    render: h => h(App),
-})
+  render: h => h(App),
+}).$mount('#app')
