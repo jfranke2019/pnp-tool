@@ -1,24 +1,55 @@
 <template>
   <div id="app">
     <b-navbar type="dark" variant="dark" sticky>
-    <b-navbar-brand href="#">DnD 5e Helper</b-navbar-brand>
+      <b-navbar-brand href="#">DnD 5e Helper</b-navbar-brand>
 
-    <b-collapse id="nav-collapse" is-nav>
-      <b-navbar-nav>
-        <b-nav-item href="#">Link</b-nav-item>
-        <b-nav-item href="#">Link 2</b-nav-item>
-      </b-navbar-nav>
-    </b-collapse>
-  </b-navbar>
+      <b-collapse id="nav-collapse" is-nav>
+        <b-navbar-nav>
+          <b-nav-item href="#">Link</b-nav-item>
+          <b-nav-item href="#">Link 2</b-nav-item>
+        </b-navbar-nav>
+      </b-collapse>
+    </b-navbar>
 
-  <template>
-    <div class="container">
-      <button type="button" class="btn btn-primary" v-on:click="getRandomMundaneItem()">Get Items</button>
-      <button type="button" class="btn btn-primary" v-on:click="getMundaneItemProperties(items[0].index)">Get Items</button>
-      <b-table striped hover v-bind:items="items" :fields="fields"></b-table>
-    </div>
-  </template>
-    
+    <template>
+      <div class="main-container">
+        <b-container>
+          <b-row>
+            <b-col>
+              <label for="item-sb">Item Quantity</label>
+              <b-form-spinbutton
+                id="item-sb"
+                v-model="itemQuantity"
+                min="1"
+                max="50"
+              ></b-form-spinbutton>
+              <button
+                type="button"
+                class="btn btn-primary"
+                v-on:click="getRandomMundaneItem()"
+              >
+                Get Items
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary"
+                v-on:click="getRandomMagicItem()"
+              >
+                Get Magic Items
+              </button>
+            </b-col>
+            <b-col cols="8">
+              <b-table
+                striped
+                hover
+                v-bind:items="items"
+                :fields="fields"
+              ></b-table>
+            </b-col>
+          </b-row>
+        </b-container>
+      </div>
+    </template>
   </div>
 </template>
 
@@ -31,41 +62,72 @@ export default {
   data() {
     return {
       fields: ["name", "type", "rarity", "price"],
-      items: [{}],
-      types: [{}],
-      rarities: [{}],
-      prices: [{}],
+      items: [],
       allMundaneItemsCount: null,
       allMundaneItems: null,
+      allMagicItemsCount: null,
+      allMagicItems: null,
+      itemQuantity: 5,
     };
   },
   methods: {
     getAllMundaneItems: function () {
       let self = this;
-      axios.get(API + "/equipment/").then(function (response) {
+      axios.get(API + "equipment/").then(function (response) {
         self.allMundaneItemsCount = response.data.count;
         self.allMundaneItems = response.data.results;
       });
     },
-    //TODO: quantity
+    getAllMagicItems: function () {
+      let self = this;
+      axios.get(API + "magic-items/").then(function (response) {
+        self.allMagicItemsCount = response.data.count;
+        self.allMagicItems = response.data.results;
+      });
+    },
     getRandomMundaneItem: function () {
       let self = this;
-      var item;
+      var item = {};
       var randomIndex;
-      randomIndex = Math.floor(Math.random() * self.allMundaneItemsCount);
-      item = self.allMundaneItems[randomIndex];
+      for (var i = 0; i < self.itemQuantity; i++) {
+        randomIndex = Math.floor(Math.random() * self.allMundaneItemsCount);
+        item = self.getMundaneItemProperties(
+          self.allMundaneItems[randomIndex].index
+        );
+        self.items.push(item);
+      }
+    },
+    getRandomMagicItem: function () {
+      let self = this;
+      var item = {};
+      var randomIndex;
+      randomIndex = Math.floor(Math.random() * self.allMagicItemsCount);
+      item = self.getMagicItemProperties(
+        self.allMagicItems[randomIndex].index
+      );
       self.items.push(item);
     },
     getMundaneItemProperties: function (index) {
-      //let self = this;
-      axios.get(API + "/equipment/" + index).then(function(response){
-        console.log("type", response.data.category_range)
-        //self.types.push(response.data.category_range)
+      var item = { name: "", type: "", rarity: "Mundane", price: "" };
+      axios.get(API + "/equipment/" + index).then(function (response) {
+        item.name = response.data.name;
+        item.type = response.data.equipment_category.name;
+        item.price =
+          response.data.cost.quantity + " " + response.data.cost.unit;
       });
+      return item;
     },
-    getRandomMagicItem: function (apiResponse) {
-      alert(apiResponse);
+    getMagicItemProperties: function (index) {
+      var item = { name: "", type: "", rarity: "", price: "" };
+      axios.get(API + "/magic-items/" + index).then(function (response) {
+        item.name = response.data.name;
+        item.type = response.data.equipment_category.name;
+      });
+      // TODO: getMagicItemRarity()
+      // TODO: getMagicItemPrice()
+      return item;
     },
+    getMagicItemPrice: function () {},
     capitalizeLetters: function (string) {
       alert(string);
     },
@@ -77,6 +139,7 @@ export default {
   },
   mounted() {
     this.getAllMundaneItems();
+    this.getAllMagicItems();
   },
 };
 </script>
