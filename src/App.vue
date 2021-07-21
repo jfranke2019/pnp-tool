@@ -56,6 +56,7 @@
 
 <script>
 import axios from "axios";
+//import priceFile from "./assets/Magical_Item_Prices.csv";
 const API = "https://www.dnd5eapi.co/api/";
 
 export default {
@@ -65,7 +66,7 @@ export default {
       fields: [
         {
           key: "name",
-          label: "name",
+          label: "Name",
           formatter: (value, key, item) => {
             const BASE = "https://www.dndbeyond.com";
             return BASE + item.url.slice(4);
@@ -141,7 +142,7 @@ export default {
       return item;
     },
     getMagicItemPrice: function () {},
-    getMagicItemValuesFromCSV: function () {}
+    getMagicItemValuesFromCSV: function () {},
   },
   mounted() {
     this.getAllMundaneItems();

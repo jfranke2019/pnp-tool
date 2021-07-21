@@ -1,0 +1,989 @@
+﻿{
+    "Tabelle": [
+        {
+            "Name": "Spell Scroll Level 0",
+            "Price": "10",
+            "Rarity": "Common"
+        },
+        {
+            "Name": "Ammunition +1(each)",
+            "Price": "25",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Potion of Healing",
+            "Price": "50",
+            "Rarity": "Common"
+        },
+        {
+            "Name": "Quaal's Feather Token Anchor",
+            "Price": "50",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Spell Scroll Level 1",
+            "Price": "60",
+            "Rarity": "Common"
+        },
+        {
+            "Name": "Philter of Love",
+            "Price": "90",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Ammunition +2(ea)",
+            "Price": "100",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Potion of Poison",
+            "Price": "100",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Elixir of Health",
+            "Price": "120",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Dust of Dryness(1 pellet)",
+            "Price": "120",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Keoghtom's Ointment(Per dose)",
+            "Price": "120",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Spell Scroll Level 2",
+            "Price": "120",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Potion of Fire Breath",
+            "Price": "150",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Potion of Greater Healing",
+            "Price": "150",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Potion of Climbing",
+            "Price": "180",
+            "Rarity": "Common"
+        },
+        {
+            "Name": "Potion of Heroism",
+            "Price": "180",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Potion of Mind Reading",
+            "Price": "180",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Scroll of Protection",
+            "Price": "180",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Potion of Water Breathing",
+            "Price": "180",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Potion of Invisibility",
+            "Price": "180",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Potion of Animal Friendship",
+            "Price": "200",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Spell Scroll Level 3",
+            "Price": "200",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Nolzur's Marvelous Pigments",
+            "Price": "200",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Quaal's Feather Token Fan",
+            "Price": "250",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Quaal's Feather Token Whip",
+            "Price": "250",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Potion of Diminution",
+            "Price": "270",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Potion of Growth",
+            "Price": "270",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Universal Solvent",
+            "Price": "300",
+            "Rarity": "Legendary"
+        },
+        {
+            "Name": "Necklace of Fireballs(One bead)",
+            "Price": "300",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Potion of Gaseous Form",
+            "Price": "300",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Dust of Disappearance",
+            "Price": "300",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Potion of Resistance",
+            "Price": "300",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Spell Scroll Level 4",
+            "Price": "320",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Vicious Weapon",
+            "Price": "350",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Sovereign Glue",
+            "Price": "400",
+            "Rarity": "Legendary"
+        },
+        {
+            "Name": "Ammunition +3(ea)",
+            "Price": "400",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Potion of Speed",
+            "Price": "400",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Horn of Blasting",
+            "Price": "450",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Potion of Superior Healing",
+            "Price": "450",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Necklace of Fireballs(Two beads)",
+            "Price": "480",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Dust of Sneezing and Choking",
+            "Price": "480",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Oil of Slipperiness",
+            "Price": "480",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Adamantine Armor",
+            "Price": "500",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Potion of Flying",
+            "Price": "500",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Arrow of Slaying(ea)",
+            "Price": "600",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Spell Scroll Level 5",
+            "Price": "640",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Mithral Armor",
+            "Price": "800",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Bead of Force",
+            "Price": "960",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Necklace of Fireballs(Three beads)",
+            "Price": "960",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Potion of Clairvoyance",
+            "Price": "960",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Elemental Gem",
+            "Price": "960",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Potion of Vitality",
+            "Price": "960",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Sword of Life-Stealing",
+            "Price": "1000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "+1 Weapon",
+            "Price": "1000",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Ioun Stone Protection",
+            "Price": "1200",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Wand of the War Mage +1",
+            "Price": "1200",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Spell Scroll Level 6",
+            "Price": "1280",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Potion of Supreme Healing",
+            "Price": "1350",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Prayer Bead - Smiting",
+            "Price": "1500",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Bracers of Archery",
+            "Price": "1500",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Circlet of Blasting",
+            "Price": "1500",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Javelin of Lightning",
+            "Price": "1500",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Wind Fan",
+            "Price": "1500",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Chime of Opening",
+            "Price": "1500",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Necklace of Fireballs(Four beads)",
+            "Price": "1600",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Sword of Sharpness",
+            "Price": "1700",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Staff of the Adder",
+            "Price": "1800",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Oil of Etherealness",
+            "Price": "1920",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Glamoured Studded Leather",
+            "Price": "2000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Prayer Bead - Bless",
+            "Price": "2000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Sword of Wounding",
+            "Price": "2000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Pipes of the Sewers",
+            "Price": "2000",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Saddle of the Cavalier",
+            "Price": "2000",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Dancing Sword",
+            "Price": "2000",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Frost Brand",
+            "Price": "2200",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Ioun Stone Absorption",
+            "Price": "2400",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Dagger of Venom",
+            "Price": "2500",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Spell Scroll Level 7",
+            "Price": "2560",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Staff of Withering",
+            "Price": "3000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Gloves of Missile Snaring",
+            "Price": "3000",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Ioun Stone Agility",
+            "Price": "3000",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Ioun Stone Fortitude",
+            "Price": "3000",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Ioun Stone Insight",
+            "Price": "3000",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Ioun Stone Intellect",
+            "Price": "3000",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Ioun Stone Leadership",
+            "Price": "3000",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Ioun Stone Strength",
+            "Price": "3000",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Quaal's Feather Token Bird",
+            "Price": "3000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Quaal's Feather Token Swan Boat",
+            "Price": "3000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Oil of Sharpness",
+            "Price": "3200",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Ring of Protection",
+            "Price": "3500",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Cloak of Protection",
+            "Price": "3500",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Oathbow",
+            "Price": "3500",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Necklace of Fireballs(Five beads)",
+            "Price": "3840",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Potion of Invulnerability",
+            "Price": "3840",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Ioun Stone Regeneration",
+            "Price": "4000",
+            "Rarity": "Legendary"
+        },
+        {
+            "Name": "+2 Weapon",
+            "Price": "4000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Boots of Speed",
+            "Price": "4000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Elven Chain",
+            "Price": "4000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Iron Bands of Bilarro",
+            "Price": "4000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Prayer Bead - Curing",
+            "Price": "4000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Rope of Entanglement",
+            "Price": "4000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Wand of Enemy Detection",
+            "Price": "4000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Dragon Scale Mail",
+            "Price": "4000",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Luckstone",
+            "Price": "4200",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Wand of the War Mage +2",
+            "Price": "4800",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Flame Tongue",
+            "Price": "5000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Ring of Evasion",
+            "Price": "5000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Ring of the Ram",
+            "Price": "5000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Tentacle Rod",
+            "Price": "5000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Periapt of Wound Closure",
+            "Price": "5000",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Gem of Brightness",
+            "Price": "5000",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Spell Scroll Level 8",
+            "Price": "5120",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Armor of Resistance",
+            "Price": "6000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Arrow-Catching Shield",
+            "Price": "6000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Belt of Dwarvenkind",
+            "Price": "6000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Bracers of Defense",
+            "Price": "6000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Ioun Stone Reserve",
+            "Price": "6000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Ring of Resistance",
+            "Price": "6000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Shield of Missile Attraction",
+            "Price": "6000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Pearl of Power",
+            "Price": "6000",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Pipes of Haunting",
+            "Price": "6000",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Animated Shield",
+            "Price": "6000",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Robe of Scintillating Colors",
+            "Price": "6000",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Scimitar of Speed",
+            "Price": "6000",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Deck of Illusions",
+            "Price": "6120",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Giant Slayer",
+            "Price": "7000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Mace of Smiting",
+            "Price": "7000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Brooch of Shielding",
+            "Price": "7500",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Necklace of Fireballs(Six beads)",
+            "Price": "7680",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Amulet of Health",
+            "Price": "8000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Dragon Slayer",
+            "Price": "8000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Mace of Disruption",
+            "Price": "8000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Mace of Terror",
+            "Price": "8000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Gauntlets of Ogre Power",
+            "Price": "8000",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Headband of Intellect",
+            "Price": "8000",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Wand of Magic Missiles",
+            "Price": "8000",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Wand of Web",
+            "Price": "8000",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Nine Lives Stealer(Fully Charged)",
+            "Price": "8000",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Wand of Binding",
+            "Price": "10000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Wand of Fear",
+            "Price": "10000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Staff of Thunder and Lightning",
+            "Price": "10000",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Spell Scroll Level 9",
+            "Price": "10240",
+            "Rarity": "Legendary"
+        },
+        {
+            "Name": "Ioun Stone Awareness",
+            "Price": "12000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Rod of the Pact Keeper +1",
+            "Price": "12000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Staff of Charming",
+            "Price": "12000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Sunblade",
+            "Price": "12000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Staff of Healing",
+            "Price": "13000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Ring of Shooting Stars",
+            "Price": "14000",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Ioun Stone Mastery",
+            "Price": "15000",
+            "Rarity": "Legendary"
+        },
+        {
+            "Name": "Hammer of Thunderbolts",
+            "Price": "16000",
+            "Rarity": "Legendary"
+        },
+        {
+            "Name": "Rod of the Pact Keeper +2",
+            "Price": "16000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Staff of Swarming Insects",
+            "Price": "16000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Wand of Paralysis",
+            "Price": "16000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "+3 Weapon",
+            "Price": "16000",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Staff of Fire",
+            "Price": "16000",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Ring of Fire Elemental Command",
+            "Price": "17000",
+            "Rarity": "Legendary"
+        },
+        {
+            "Name": "Dwarven Thrower",
+            "Price": "18000",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Wand of the War Mage +3",
+            "Price": "19200",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Efreeti Chain",
+            "Price": "20000",
+            "Rarity": "Legendary"
+        },
+        {
+            "Name": "Ring of Free Action",
+            "Price": "20000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Sentinel Shield",
+            "Price": "20000",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Staff of Striking",
+            "Price": "21000",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Vorpal Sword",
+            "Price": "24000",
+            "Rarity": "Legendary"
+        },
+        {
+            "Name": "Ring of Spell Storing",
+            "Price": "24000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Ring of Water Elemental Command",
+            "Price": "25000",
+            "Rarity": "Legendary"
+        },
+        {
+            "Name": "Rod of Alertness",
+            "Price": "25000",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Staff of Frost",
+            "Price": "26000",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Instrument of the Bards - Fochulan Bandlore",
+            "Price": "26500",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Instrument of the Bards - Mac-Fuirmidh Cittern",
+            "Price": "27000",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Rod of Lordly Might",
+            "Price": "28000",
+            "Rarity": "Legendary"
+        },
+        {
+            "Name": "Rod of the Pact Keeper +3",
+            "Price": "28000",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Instrument of the Bards - Doss Lute",
+            "Price": "28500",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Ring of Spell Turning",
+            "Price": "30000",
+            "Rarity": "Legendary"
+        },
+        {
+            "Name": "Instrument of the Bards - Canaith Mandolin",
+            "Price": "30000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Mantle of Spell Resistance",
+            "Price": "30000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Ioun Stone Greater Absorption",
+            "Price": "31000",
+            "Rarity": "Legendary"
+        },
+        {
+            "Name": "Prayer Bead - Favor",
+            "Price": "32000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Wand of Fireballs",
+            "Price": "32000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Wand of Lightning Bolts",
+            "Price": "32000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Wand of Polymorph",
+            "Price": "32000",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Instrument of the Bards - Cli Lyre",
+            "Price": "35000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Scarab of Protection",
+            "Price": "36000",
+            "Rarity": "Legendary"
+        },
+        {
+            "Name": "Sword of Answering",
+            "Price": "36000",
+            "Rarity": "Legendary"
+        },
+        {
+            "Name": "Staff of the Woodlands",
+            "Price": "44000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Spellguard Shield",
+            "Price": "50000",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Rod of Absorption",
+            "Price": "50000",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Cloak of Displacement",
+            "Price": "60000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Weapon of Warning",
+            "Price": "60000",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Name": "Robe of Stars",
+            "Price": "60000",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Talisman of Ultimate Evil",
+            "Price": "61440",
+            "Rarity": "Legendary"
+        },
+        {
+            "Name": "Talisman of Pure Good",
+            "Price": "71680",
+            "Rarity": "Legendary"
+        },
+        {
+            "Name": "Prayer Bead - Wind Walking",
+            "Price": "96000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Instrument of the Bards - Anstruth Harp",
+            "Price": "109000",
+            "Rarity": "Very Rare"
+        },
+        {
+            "Name": "Instrument of the Bards - Ollamh Harp",
+            "Price": "125000",
+            "Rarity": "Legendary"
+        },
+        {
+            "Name": "Prayer Bead - Summons",
+            "Price": "128000",
+            "Rarity": "Rare"
+        },
+        {
+            "Name": "Holy Avenger",
+            "Price": "165000",
+            "Rarity": "Legendary"
+        },
+        {
+            "Name": "Robe of Useful Items",
+            "Price": "Items * 5",
+            "Rarity": "Uncommon"
+        }
+    ]
+}
