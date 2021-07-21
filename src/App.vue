@@ -56,7 +56,7 @@
 
 <script>
 import axios from "axios";
-//import priceFile from "./assets/Magical_Item_Prices.csv";
+import priceFile from "./assets/Magical_Item_Prices.json";
 const API = "https://www.dnd5eapi.co/api/";
 
 export default {
@@ -82,6 +82,7 @@ export default {
       allMagicItemsCount: null,
       allMagicItems: null,
       itemQuantity: 5,
+      priceFile,
     };
   },
   methods: {
