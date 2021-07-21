@@ -39,12 +39,13 @@
               </button>
             </b-col>
             <b-col cols="8">
-              <b-table
-                striped
-                hover
-                v-bind:items="items"
-                :fields="fields"
-              ></b-table>
+              <b-table striped hover v-bind:items="items" :fields="fields">
+                <template #cell(name)="data">
+                  <a id="item-link" :href="`${data.value}`">{{
+                    data.item.name
+                  }}</a>
+                </template>
+              </b-table>
             </b-col>
           </b-row>
         </b-container>
@@ -61,7 +62,19 @@ export default {
   name: "App",
   data() {
     return {
-      fields: ["name", "type", "rarity", "price"],
+      fields: [
+        {
+          key: "name",
+          label: "name",
+          formatter: (value, key, item) => {
+            const BASE = "https://www.dndbeyond.com";
+            return BASE + item.url.slice(4);
+          },
+        },
+        "type",
+        "rarity",
+        "price",
+      ],
       items: [],
       allMundaneItemsCount: null,
       allMundaneItems: null,
@@ -102,18 +115,17 @@ export default {
       var item = {};
       var randomIndex;
       randomIndex = Math.floor(Math.random() * self.allMagicItemsCount);
-      item = self.getMagicItemProperties(
-        self.allMagicItems[randomIndex].index
-      );
+      item = self.getMagicItemProperties(self.allMagicItems[randomIndex].index);
       self.items.push(item);
     },
     getMundaneItemProperties: function (index) {
-      var item = { name: "", type: "", rarity: "Mundane", price: "" };
+      var item = { name: "", type: "", rarity: "Mundane", price: "", url: "" };
       axios.get(API + "/equipment/" + index).then(function (response) {
         item.name = response.data.name;
         item.type = response.data.equipment_category.name;
         item.price =
           response.data.cost.quantity + " " + response.data.cost.unit;
+        item.url = response.data.url;
       });
       return item;
     },
@@ -122,24 +134,19 @@ export default {
       axios.get(API + "/magic-items/" + index).then(function (response) {
         item.name = response.data.name;
         item.type = response.data.equipment_category.name;
+        item.url = response.data.url;
       });
       // TODO: getMagicItemRarity()
       // TODO: getMagicItemPrice()
       return item;
     },
     getMagicItemPrice: function () {},
-    capitalizeLetters: function (string) {
-      alert(string);
-    },
-    createURL: function (apiUrl) {
-      const BASE = "https://www.dndbeyond.com";
-      var url = apiUrl.slice(4);
-      return BASE + url;
-    },
+    getMagicItemValuesFromCSV: function () {}
   },
   mounted() {
     this.getAllMundaneItems();
     this.getAllMagicItems();
+    this.getMagicItemValuesFromCSV();
   },
 };
 </script>
